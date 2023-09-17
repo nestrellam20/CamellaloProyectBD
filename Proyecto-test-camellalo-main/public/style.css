@@ -1,5 +1,5 @@
 * {
-    margin: 0;
+    margin: 2;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
@@ -131,7 +131,7 @@ body {
     border-radius: 2rem;
     background-color: white;
     font-weight: 600;
-    margin-top: 3rem;
+    margin-top: 1rem;
     font-size: .8rem;
     cursor: pointer;
     color: #222;
@@ -160,7 +160,6 @@ button {
     border-radius: 2rem;
     background-color: rgb(255, 255, 255);
     font-weight: 600;
-    /***se cambio de 3rem a 1rem**/
     margin-top: 1rem;
     font-size: .8rem;
     cursor: pointer;
