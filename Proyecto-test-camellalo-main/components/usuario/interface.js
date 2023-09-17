@@ -29,4 +29,5 @@ route.delete('/', function(req, res) {
         .catch( (error) => response.error(req, res, error, 500) )
 })
 
+
 module.exports = route

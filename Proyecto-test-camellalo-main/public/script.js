@@ -1,17 +1,8 @@
-document.getElementById("miBoton").addEventListener("click", function () {
+document.getElementById("LoginButton").addEventListener("click", function () {
     // Redirige a la página index2.html al hacer clic en el botón "Siguiente"
     window.location.href = "index2.html";
   });
 
-  document.getElementById("miBoton2").addEventListener("click", function () {
-    // Redirige a la página index2.html al hacer clic en el botón "Siguiente"
-    window.location.href = "index2.html";
-  });
-
-  document.getElementById("miBoton3").addEventListener("click", function () {
-    // Redirige a la página index2.html al hacer clic en el botón "Siguiente"
-    window.location.href = "prueba.html";
-  });
 
 
   // Agrega el evento submit al formulario de registro
@@ -55,43 +46,6 @@ document.getElementById("miBoton").addEventListener("click", function () {
 
     }
 
-    document.addEventListener("DOMContentLoaded", function () {
-    document.getElementById('login-form').addEventListener('submit', function (event) {
-      event.preventDefault(); // Evita que la página se recargue al enviar el formulario
-  
-      // Obtén el valor de los campos de inicio de sesión
-      var usuario = document.querySelector('input[name="usuario"]').value;
-      var contraseña = document.querySelector('input[name="contraseña"]').value;
-  
-      // Realiza una solicitud AJAX para enviar los datos de inicio de sesión
-      validateInicioSesion(usuario, contraseña);
-    });
-  
-    function validateInicioSesion(usuario, contraseña) {
-      // Realiza una solicitud AJAX al servidor para verificar las credenciales
-      $.ajax({
-        url: 'http://localhost:3000/usuario/login',
-        method: 'POST',
-        data: {
-          usuari: usuario,
-          contraseña: contraseña,
-        },
-        dataType: 'json',
-      })
-        .then(function (data) {
-          // Si las credenciales son válidas, puedes redirigir al usuario a la página deseada
-          console.log('Inicio de sesión exitoso');
-          console.log(data);
-          window.location.href = "prueba.html"; // Redirige a la página prueba.html después del inicio de sesión exitoso
-        })
-        .catch(function (error) {
-          // Si las credenciales son inválidas, puedes mostrar un mensaje de error al usuario
-          console.log('Error de inicio de sesión');
-          console.log(error.responseText);
-          alert('Credenciales inválidas. Inténtalo de nuevo.');
-        });
-    }
-  });
 
   
   
